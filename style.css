@@ -3,3 +3,93 @@
 
    Fjalla One -> font-family: 'Fjalla One', sans-serif;
 */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F9F5EE;
+}
+
+h5,h4, p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* NAV */
+nav{
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+}
+
+.hv-nav{
+    width:140px;
+}
+
+.menu-container-logo{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    color: white;
+}
+
+.main-banner{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.img-banner{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -10;
+}
+
+.content-banner{
+    width: 850px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-title{
+    font-size: 7.5rem;
+    font-family: 'Fjalla One', sans-serif;
+    color: white;
+}
+
+.subtitle-banner{
+    color: white;
+    font-weight: 600;
+}
+
+.general-text{
+    color: white;
+    width: 350px;
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+.link-banner{
+    color: white;
+    margin-top: 4rem;
+}
+
+/* ======== ¿QUÉ ES? ======== */
+
+.que-es{
+    height: 100vh;
+    width: 100%;
+}
+
