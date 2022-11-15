@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:wght@400;500;700&display=swap');
+
+*{
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.4rem;
+}
+
+h2 {
+    line-height: 3.5rem;
+    font-size: 2.6rem;
+    font-weight: 600;
+}
+
+h3 {
+    text-align: center;  
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+}
+
+h4 {
+    font-family: Fjalla One;
+    font-weight: 500;
+    padding-top: 2rem;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+}
+
+h6 {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.padding {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+.green-text {
+    color: #034638;
+}
+
+.columns {
+    display: flex;
+    column-gap: 25.5rem;
+    width: 70rem;
+}
+
+.column {
+    width: 22rem;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.photo {
+    width: auto;
+    height: 16rem;
+}
+
