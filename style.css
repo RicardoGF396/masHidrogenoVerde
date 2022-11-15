@@ -91,5 +91,16 @@ nav{
 .que-es{
     height: 100vh;
     width: 100%;
+    padding: 4rem 8rem;
 }
 
+h6{
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    color: #034638;
+    font-size: 1.1rem;
+}
+
+.big-title{
+    /* font-size: ; */
+}
