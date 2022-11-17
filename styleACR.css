@@ -1,11 +1,172 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:wght@400;500;700&display=swap');
 
-*{
+/* ======== GENERAL ======== */
+
+* {
     font-family: Montserrat;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* NAV */
+nav {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+}
+
+.hv-nav {
+    width: 140px;
+}
+
+.menu-container-logo {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    color: white;
+}
+
+.main-banner {
+    width: 100%;
+    height: 110vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.img-banner {
+    width: 100%;
+    height: 110vh;
+    position: absolute;
+    z-index: -10;
+}
+
+.content-banner {
+    width: 850px;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-title {
+    font-size: 5rem;
+    line-height: 6rem;
+    font-family: 'Fjalla One', sans-serif;
+    color: white;
+    text-align: end;
+    margin-right: 10rem;
+}
+
+.subtitle-banner {
+    color: white;
+    font-weight: 600;
+}
+
+.general-text {
+    color: white;
+    width: 350px;
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+.link-banner {
+    color: white;
+    margin-top: 4rem;
+}
+
+/* ======== MENÚ ======== */
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    opacity: 98%;
+    z-index: 1;
+    background-color: #034638;
+    overflow-x: hidden;
+}
+
+.overlay .frame {
+    margin-top: 4rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.overlay .columns {
+    color: #f1f1f1;
+    display: flex;
+    column-gap: 8rem;
+    width: 78rem;
+    position: relative;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.overlay p {
+    font-size: .8rem;
+    line-height: 1.5rem;
+    margin-top: 0rem;
+}
+
+.overlay .column1 {
+    width: 35rem;
+    line-height: 2.5;
+}
+
+.overlay .column2 {
+    width: 20rem;
+    line-height: 0rem;
+}
+
+
+.overlay h1 {
+    font-size: 1.6rem;
+    color: #f1f1f1;
+    transition: 0.3s;
+}
+
+.overlay h1:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+    font-size: 1.7rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.subtitle {
+    font-size: 1rem !important;
+    font-weight: 600;
+    color: #f1f1f1;
+    opacity: 50%;
+    margin-bottom: .8rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a .selected {
+    text-decoration: underline;
+    text-decoration-thickness: .6rem;
+}
+
+.cross {
+    text-align: end !important;
+    margin-right: 7.7rem; 
+    margin-top: 1.4rem ; 
+    color: white; 
+    font-weight: 500; 
+    font-size: 2rem;
+}
+
+/* ======== ARTÍCULO ======== */
 
 p {
     text-align: justify;
@@ -16,10 +177,11 @@ h2 {
     line-height: 3.5rem;
     font-size: 2.6rem;
     font-weight: 600;
+    margin-bottom: 2rem;
 }
 
 h3 {
-    text-align: center;  
+    text-align: center;
     font-size: 1.5rem;
     line-height: 2.3rem;
 }
@@ -58,6 +220,7 @@ h6 {
 
 .column {
     width: 22rem;
+    text-align: start;
 }
 
 .align-right {
@@ -65,7 +228,7 @@ h6 {
 }
 
 .photo {
+    margin-top: 2rem;
     width: auto;
     height: 16rem;
 }
-
