@@ -5,24 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="assets/icono.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="assets/icono.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
+
     <!-- ====== SWIPER ====== -->
     <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
   />
+
+  <!-- =========== JQUERY =========== -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+  <!-- ========= GSAP =============== -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    
     <title>Más Hidrogeno Verde</title>
   </head>
   <body>
 
     <!-- ============ MENU ================== -->
-    <section class="menu">
+    <section id="menu" class="menu">
       <div class="menu-header">
           <img class="menu-logo" src="assets/logoHV.svg" alt="logoMenu">
-        <div class="cross">
+        <div id="close-menu" class="cross">
           <img src="assets/close.svg" alt="close">
-          <p id="close-menu" class="text-close">Cerrar</p>
+          <p class="text-close">Cerrar</p>
         </div>
       </div>
         
@@ -64,7 +71,7 @@
         <div class="logo-nav">
           <img class="hv-nav" src="assets/newLogo.svg" alt="main-logo" />
         </div>
-        <div class="menu-container-logo">
+        <div id="show-menu" class="menu-container-logo">
           <img class="menu-nav-icon" src="assets/circle.svg" alt="circle" srcset="" />
           <h5 class="menu-nav-text">MENU</h5>
         </div>
@@ -73,6 +80,7 @@
 
     <!-- ========== MAIN ============= -->
     <main>
+      
       <section id="main-banner">
         <img class="img-banner" src="assets/heroHome.jpg" alt="bannerHome" />
         <div class="content-banner">

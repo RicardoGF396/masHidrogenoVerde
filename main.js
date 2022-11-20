@@ -37,8 +37,30 @@ window.onscroll = function() {
 };
 
 
-/* Toogle Nav */
+/* =========== Show Menu ===========  */
+let menu = document.querySelector('.menu')
+let closeMenu = document.getElementById('close-menu')
+let showMenu = document.getElementById('show-menu')
 
-let menuBtn = document.querySelector('.menu-container-logo')
+var t1 = new TimelineMax({ paused: true });
 
+t1.to(".menu", 1, {
+  left: 0,
+  ease: Expo.easeInOut,
+});
 
+t1.staggerFrom(
+  ".menu-content",
+  0.8,
+  { y: 100, opacity: 0, ease: Expo.easeOut },
+  "0.1",
+  "-=0.4"
+);
+
+t1.reverse();
+			$(document).on("click", ".menu-container-logo", function () {
+				t1.reversed(!t1.reversed());
+			});
+			$(document).on("click", ".cross", function () {
+				t1.reversed(!t1.reversed());
+			});
