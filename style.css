@@ -31,9 +31,6 @@ h5,h4, p{
   background-color: var(--green-main);
   z-index: 200;
   padding: 2rem 3rem 2rem 5rem;
-  /* --offset: 20vw;
-	--move-initial: calc(-25% + var(--offset));
-	--move-final: calc(-50% + var(--offset)); */
   position: fixed;
 	left: -100%;
 	width: 100%;
@@ -577,4 +574,26 @@ h6{
     font-size: 0.8rem;
   }
 
-  
+  /* -----------------------=========== Hidrogeno Verde en México =================----------------------- */
+  main-banner-mex{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .banner-mex{
+  position: absolute;
+  }
+
+.content-banner-mex{
+  position: absolute;
+  bottom: 40%;
+  right: 10%;
+}
+
+.main-title-mex{
+  font-family: var(--title-font);
+  color: white;
+  font-size: 5rem;
+}

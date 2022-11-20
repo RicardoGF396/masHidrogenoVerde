@@ -22,7 +22,7 @@ let logoText = document.querySelector('.menu-nav-text')
 let mainLogo = document.querySelector('.hv-nav')
 
 window.onscroll = function() {
-  "use strict";
+  //"use strict";
   if (document.body.scrollTop >= 150 || document.documentElement.scrollTop >= 150) {
     nav.classList.add("scroll-nav");
     logoText.classList.add("scroll-menu-nav-text")
